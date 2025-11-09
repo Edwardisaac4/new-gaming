@@ -83,10 +83,10 @@ const Header = () => {
 
       <div
         id="mobileMenu"
-        className={`fixed md:hidden top-14 right-0 left-0 bg-black p-5 transition-all duration-300 ease-in-out transform ${
+        className={`fixed md:hidden top-14 right-0 left-0 bg-black p-5 transition-transform duration-300 ease-in-out transform ${
           isMobileMenuOpen
-            ? "opacity-100 visible translate-y-0"
-            : "opacity-0 invisible -translate-y-4"
+            ? "translate-x-0"
+            : "translate-x-full"
         }`}
       >
         <nav className="flex-col flex items-center gap-9">
@@ -132,9 +132,9 @@ const Header = () => {
         </nav>
 
         <div className="flex flex-col gap-4 mt-6">
-          <button className="bg-blue-600 rounded py-3 mt-4">Play Now</button>
+          <button className="bg-blue-600 rounded py-3 mt-4 cursor-pointer hover:bg-green-400">Play Now</button>
 
-          <button className="bg-purple-600 rounded py-3">NFT Store</button>
+          <button className="bg-purple-600 rounded py-3 cursor-pointer hover:bg-amber-400">NFT Store</button>
         </div>
       </div>
       {/* Mobile Menu Button & Nav Ends */}
