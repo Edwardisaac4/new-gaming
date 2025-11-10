@@ -1,15 +1,34 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import "boxicons/css/boxicons.min.css";
 const Header = () => {
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(prevState => !prevState);
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      // Set scrolled state to true if user scrolls down more than 10px, else false
+      setIsScrolled(window.scrollY > 10);
+    };
+
+    // Add event listener for scroll
+    window.addEventListener('scroll', handleScroll);
+
+    // Cleanup function to remove the event listener
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []); // Empty dependency array ensures this effect runs only once on mount
+
   return (
-    <header className="py-1 px-7 flex justify-between border-b-[0.4px] items-center fixed z-50 w-full bg-[#0a0a0a] border-[#babaff]">
+    <header
+      className={`py-1 px-7 flex justify-between items-center fixed z-50 w-full transition-all duration-300 ${isScrolled ? 'bg-[#0a0a0a]/80 backdrop-blur-lg border-b-[0.4px] border-[#babaff]' : 'bg-transparent border-b-[0.4px] border-transparent'
+        }`}
+    >
       {/* Desktop Menu */}
 
       <div className="lg:gap-14 items-center flex gap-4 ">
@@ -83,7 +102,7 @@ const Header = () => {
 
       <div
         id="mobileMenu"
-        className={`fixed md:hidden top-14 right-0 left-0 bg-black p-5 transition-transform duration-300 ease-in-out transform ${
+        className={`fixed md:hidden top-14 right-0 left-0 bg-[#0a0a0a]/80 backdrop-blur-lg h-screen p-5 transition-transform duration-300 ease-in-out transform ${
           isMobileMenuOpen
             ? "translate-x-0"
             : "translate-x-full"
