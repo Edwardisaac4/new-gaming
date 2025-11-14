@@ -19,6 +19,13 @@ const Hero = () => {
     };
   }, []);
 
+  const handleScrollClick = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <main className="relative mb-[10%] w-full h-screen overflow-hidden flex justify-center">
       <video
@@ -57,11 +64,14 @@ const Hero = () => {
       </div>
 
       {/* Scroll Down Indicator */}
-      <div className="absolute bottom-10 lg:right-24 right-5 flex flex-col items-center">
+      <div
+        className="absolute bottom-10 lg:right-24 right-5 flex flex-col items-center cursor-pointer"
+        onClick={handleScrollClick}
+      >
         <div className="relative w-6 h-10">
           <div className="scroll-arrows"></div>
         </div>
-        <p className="text-[#babaff] mt-2 text-sm sm:block hidden">Scroll Down</p>
+        <p className="text-[#babaff] mt-2 text-sm sm:block hidden"></p>
       </div>
     </main>
   );
