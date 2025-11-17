@@ -53,7 +53,7 @@ const Header = () => {
         </div>
       </div>
 
-      <nav className="md:flex hidden lg:gap-8 gap-4">
+      <nav className=" md:flex hidden lg:gap-8 gap-4">
         <a
           href="#"
           className='relative py-1 text-lg hover:text-purple-600 transition-colors duration-300
@@ -133,8 +133,8 @@ const Header = () => {
           <a
             href="#"
             className='relative py-1 text-lg hover:text-purple-600 transition-colors duration-300
-           after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
-           after:transition-all hover:after:w-full text-nowrap
+          after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
+          after:transition-all hover:after:w-full text-nowrap
         '
           >
             <i class="bx bxs-user"></i> AVATAR
@@ -143,8 +143,8 @@ const Header = () => {
           <a
             href="#"
             className='relative py-1 text-lg hover:text-purple-600 transition-colors duration-300
-           after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
-           after:transition-all hover:after:w-full text-nowrap
+          after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
+          after:transition-all hover:after:w-full text-nowrap
         '
           >
             <i class="bx bxs-user"></i> AVATAR
