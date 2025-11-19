@@ -2,6 +2,7 @@ import Header from "./components/header";
 import Hero from "./components/Hero";
 import Arena from "./components/Arena";
 import Character from "./components/character";
+import Footer from "./components/footer";
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Hero />
       <Character />
       <Arena />
+      <Footer />
     </div>
   );
 };

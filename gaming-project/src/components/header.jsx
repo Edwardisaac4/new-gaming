@@ -32,33 +32,33 @@ const Header = () => {
     >
       {/* Desktop Menu */}
 
-      <div className="lg:gap-14 items-center flex gap-4 ">
+      <div className="lg:gap-14 items-center flex gap-3 ">
         <img className="md:w-16 w-12" src="images/logo.png" alt="" />
 
-        <div className="hidden md:flex gap-5 items-center">
+        <div className="hidden md:flex gap-4 items-center">
           <button
             className="h-8 px-6 bg-linear-to-r from bg-purple-500 to rounded-lg font-medium text-nowrap hover:from-purple-600 hover:to-indigo-700 text-white
-                 transition-colors duration-300"
+                transition-colors duration-300"
           >
             Play Now
           </button>
 
           <button
             className="h-8 px-6 bg-linear-to-r from to
-                 bg-gray-600 rounded-lg font-medium text-nowrap hover:from-blue-600 hover:to-gray-700 text-white
-                 transition-colors duration-300"
+                bg-gray-600 rounded-lg font-medium text-nowrap hover:from-blue-600 hover:to-gray-700 text-white
+                transition-colors duration-300"
           >
             Play Now
           </button>
         </div>
       </div>
 
-      <nav className=" md:flex hidden lg:gap-8 gap-4">
+      <nav className=" md:flex hidden lg:gap-8 gap-2">
         <a
           href="#"
           className='relative py-1 text-lg hover:text-purple-600 transition-colors duration-300
-           after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
-           after:transition-all hover:after:w-full text-nowrap
+          after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
+          after:transition-all hover:after:w-full text-nowrap
         '
         >
           <i class="bx bxs-user"></i> AVATAR
@@ -67,8 +67,8 @@ const Header = () => {
         <a
           href="#"
           className='relative py-1 text-lg hover:text-purple-600 transition-colors duration-300
-           after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
-           after:transition-all hover:after:w-full text-nowrap
+          after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
+          after:transition-all hover:after:w-full text-nowrap
         '
         >
           <i class="bx bxs-user"></i> AVATAR
@@ -77,8 +77,8 @@ const Header = () => {
         <a
           href="#"
           className='relative py-1 text-lg hover:text-purple-600 transition-colors duration-300
-           after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
-           after:transition-all hover:after:w-full text-nowrap
+          after:content-[""] after:absolute after:w-0 h-0.5 after:bg-purple-700 after:bottom-0 after:left-0
+          after:transition-all hover:after:w-full text-nowrap
         '
         >
           <i class="bx bxs-user"></i> AVATAR
