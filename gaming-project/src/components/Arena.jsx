@@ -31,12 +31,50 @@ const Arena = () => {
             <video src="videos/bento-card2.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover"></video>
           </div>
         </div>
+        
+        <div className="md:col-span-2 space-y-4 md:space-y-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+            <div className='relative overflow-hidden rounded-3xl border border-white aspect-square transform transition-transform duration-500
+              hover:scale-105  
+            '>
+              <video src="videos\bento-card3.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover">
+              </video>
+                <h1 className='absolute bottom-2 left-1/2 transform -translate-x-1/2 font-extrabold text-2xl z-10'>
+                  SCORIOX
+                </h1>
+            </div>
+
+            <div className='relative overflow-hidden rounded-3xl border border-white aspect-square transform transition-transform duration-500
+              hover:scale-105  
+            '>
+              <video src="videos\bento-card4.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover">
+              </video>
+                <h1 className='absolute bottom-2 left-1/2 transform -translate-x-1/2 font-extrabold text-2xl z-10'>
+                  Floralnyx
+                </h1>
+            </div>
+
+            <div className='relative overflow-hidden rounded-3xl border border-white aspect-square transform transition-transform duration-500
+              hover:scale-105  
+            '>
+              <video src="videos\bento-card5.mp4" autoPlay muted loop playsInline className="w-full h-full object-cover">
+              </video>
+                <h1 className='absolute bottom-2 left-1/2 transform -translate-x-1/2 font-extrabold text-2xl z-10'>
+                  Titanor
+                </h1>
+            </div>
+          </div>
 
 
+          <div className="relative overflow-hidden rounded-3xl border border-white aspect-[16/9] md:col-span-2 transform transition-transform duration-500
+            hover:scale-[1.03]
+          ">
+            <img src="images/bento-card5.png" alt="" />
+          </div>
         
       </div>
-
     </div>
+  </div>  
   )
 }
 

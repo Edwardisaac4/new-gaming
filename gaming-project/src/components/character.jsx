@@ -25,7 +25,7 @@ const Character = () => {
         portable: 90,
         stars : 5,
         sceneUrl: 'https://prod.spline.design/rA35ATvU6BTxoTbr/scene.splinecode'
-    }
+    },
     }
 
     const currentAvatar = Avatar[selectedCharacter];
